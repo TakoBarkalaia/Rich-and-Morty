@@ -1,0 +1,23 @@
+
+<article>
+    <div class="h1">
+        <h1>Return to first page</h1>
+    <button routerLink="" class="d-block btn btn-outline-info col-md-9">See all Characters</button>
+    
+    </div>
+    
+    <div class="d-flex flex-wrap justify-content-center style">
+        <br>
+        <div class="card" style="width: 18rem;"
+        *ngFor="let item of allCharactersAlterEgos">
+            
+            <img [src]="item.image" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Name:</b> {{item.name}}</h5>
+              <p class="card-text"><b>Status:</b> {{item.status}}</p>
+              <p class="card-text"><b>Species:</b> {{item.species}}</p>
+              <p class="card-text"><b>Gender:</b> {{item.gender}}</p>
+            </div>
+          </div>
+    </div>
+</article>

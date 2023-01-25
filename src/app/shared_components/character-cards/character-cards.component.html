@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+   
+    <img [src]="characterItem.image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><b>Name:</b> {{characterItem.name}}</h5>
+      <p class="card-text"><b>Status:</b> {{characterItem.status}}</p>
+      <p class="card-text"><b>Species:</b> {{characterItem.species}}</p>
+      <p class="card-text"><b>Gender:</b> {{characterItem.gender}}</p>
+      <button
+      routerLink="character/inner/{{characterItem.name}}" class="btn btn-outline-light col-md-12">See all alter egos</button>
+    </div>
+  </div>

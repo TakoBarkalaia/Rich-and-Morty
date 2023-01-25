@@ -1,0 +1,27 @@
+
+/* article {
+    background: url(https://wallpapersmug.com/download/1440x2560/961542/Rick-and-Morty-tv-series-cartoon-5k.jpg)center/cover no-repeat fixed;
+} */
+.style {
+    margin: 10px;
+    
+}
+.card {
+    margin: 10px;
+    box-shadow: 0px 0px 3px 2px rgb(0 253 243);
+    background-color: rgb(60, 62, 68);
+    color: rgb(255, 255, 255);
+}
+.h1 {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0;
+}
+button {
+    margin: 20px;
+    font-size: 26px;
+    
+}

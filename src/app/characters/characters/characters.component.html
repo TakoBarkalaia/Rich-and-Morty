@@ -1,0 +1,19 @@
+
+<article>
+    <h1>Gender Filter</h1>
+<div class="d-flex justify-content-center flex-wrap">
+    <button (click)="getGenderFemale()" class="col-md-2 btn btn-outline-success">female</button>
+    <button (click)="getGenderMale()" class="col-md-2 btn btn-outline-primary">male</button>
+    <button (click)="getGenderGenderless()" class="col-md-2 btn btn-outline-warning">genderless</button>
+    <button (click)="getGenderUnknown()" class="col-md-2 btn btn-outline-danger">unknown</button>
+    <button (click)="ngOnInit()" class="btn btn-outline-light col-md-5">All Characters</button>
+</div>
+
+<div class="d-flex flex-wrap justify-content-center style">
+    <br>
+    <app-character-cards
+    *ngFor="let item of allCharactersList"
+    [characterItem]="item"
+    ></app-character-cards>
+</div>
+</article>
